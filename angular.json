@@ -30,16 +30,24 @@
 
             "styles": [
 	    {
-	    "input":"src/lib/assets/css/mobilebone.css"
+	    "input":"src/lib/assets/css/material.css"
 	    },
+
 	      "src/styles.scss",
-	      "src/lib/assets/scss/variables.scss"
+	      "src/lib/assets/scss/variables.scss",
+	      "node_modules/perfect-scrollbar/css/perfect-scrollbar.css"
             ],
 
             "scripts": [
 	    	    {
-	     "input":"src/lib/assets/js/backbone-min.js"
+	     "input":"src/lib/assets/js/mobilebone.js"
 	    	    },
+		"node_modules/jquery/dist/jquery.js",
+		"node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+		"node_modules/popper.js/dist/umd/popper.js",
+		"node_modules/moment/moment.js",
+		"node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
+		"node_modules/arrive/src/arrive.js"
 	    ]
           },
 
@@ -63,7 +71,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "4mb",
+                  "maximumWarning": "3mb",
                   "maximumError": "5mb"
                 }
               ]
