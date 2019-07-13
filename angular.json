@@ -30,10 +30,10 @@
 
             "styles": [
 	    {
-	    "input":"src/lib/assets/variables.scss"
+	    "input":"src/lib/assets/css/mobilebone.css"
 	    },
-	      "src/lib/assets/css/material.css",
-              "src/styles.scss"
+	      "src/styles.scss",
+	      "src/lib/assets/scss/variables.scss"
             ],
 
             "scripts": [

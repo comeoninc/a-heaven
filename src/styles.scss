@@ -1,2 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-@import "lib/assets/css/material.css";
+/* You can add global styles to this file, and also import other style files*/
+@import "~@getbase/base/scss/index";
+@import "~@progress/kendo-theme-material/scss/all"; 
+@import '~@angular/material/theming';
+@include mat-core();
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';

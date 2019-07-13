@@ -41,7 +41,7 @@ import {
 	MatTooltipModule,
 	MatTreeModule
 	 } from '@angular/material';
-
+import { OverlayContainer } from '@angular/cdk/overlay';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
@@ -137,4 +137,8 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(overlayContainer: OverlayContainer) {
+    overlayContainer.getContainerElement().classList.add('angular-material-theme');
+  }
+}

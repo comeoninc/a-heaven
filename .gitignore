@@ -12,7 +12,8 @@
 *.ini
 *.log
 *.bak
-
+debug.*
+*.conf
 
 # profiling files
 chrome-profiler-events.json
