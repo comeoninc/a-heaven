@@ -64,7 +64,7 @@
     "typescript": "~3.4.3"
   },
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.",
-  "main": "index.php",
+  "main": "index.html",
   "keywords": [
     "a-heaven",
     "amich",

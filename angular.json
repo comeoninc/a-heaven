@@ -18,27 +18,27 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/a-heaven",
-            "index": "src/index.php",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "src/index.html",
+            "main": "src/lib/main.ts",
+            "polyfills": "src/lib/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/icons/favicon.ico",
-              "src/assets"
+              "src/lib/icons/favicon.ico",
+              "src/lib/assets"
             ],
 
             "styles": [
 	    {
-	    "input":"src/assets/variables.scss"
+	    "input":"src/lib/assets/variables.scss"
 	    },
-	      "src/assets/css/material.css",
+	      "src/lib/assets/css/material.css",
               "src/styles.scss"
             ],
 
             "scripts": [
 	    	    {
-	     "input":"src/assets/js/backbone-min.js"
+	     "input":"src/lib/assets/js/backbone-min.js"
 	    	    },
 	    ]
           },
@@ -47,8 +47,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "src/lib/environments/environment.ts",
+                  "with": "src/lib/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -90,13 +90,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "main": "src/lib/test.ts",
+            "polyfills": "src/lib/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/icons/favicon.ico",
-              "src/assets"
+              "src/lib/icons/favicon.ico",
+              "src/lib/assets"
             ],
             "styles": [
               "src/styles.scss"
