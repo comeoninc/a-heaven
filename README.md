@@ -26,6 +26,7 @@
 
 ## Description
 
+A HEAVEN - Sub-Project of Amich-UI by comeoninc.com
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
@@ -37,21 +38,15 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
-$ npm run start
+# start mode
+$ npm start
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+# production build
+$ npm run build
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
+# run test
+$ npm test
 
 # e2e tests
 $ npm run test:e2e
